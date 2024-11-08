@@ -1,13 +1,11 @@
 <script>
-  import SectionContainer from "$lib/section-container.svelte";
-  import Home from "$lib/home.svelte";
+  import Home from "$lib/Home.svelte";
+  import About from "$lib/About.svelte";
+  import Projects from "$lib/Projects.svelte";
+  import Contact from "$lib/Contact.svelte";
 </script>
 
 <Home />
-
-<h1>Welcome to SvelteKit</h1>
-<SectionContainer>Hell yhea</SectionContainer>
-<p>
-  Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the
-  documentation
-</p>
+<About />
+<Projects />
+<Contact />
