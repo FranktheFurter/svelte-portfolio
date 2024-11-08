@@ -5,7 +5,6 @@
   import Contact from "$lib/Contact.svelte";
 </script>
 
-<p>help</p>
 <Hero />
 <About />
 <Projects />
