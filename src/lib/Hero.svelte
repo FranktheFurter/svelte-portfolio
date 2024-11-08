@@ -1,5 +1,5 @@
 <section
-  id="home"
+  id="hero"
   class="min-h-screen flex items-center justify-center nav-bar-scroll-margin relative overflow-hidden"
 >
   <div class="absolute inset-0 w-full h-full"></div>
