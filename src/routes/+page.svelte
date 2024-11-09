@@ -4,8 +4,8 @@
   import Projects from "$lib/sections/Projects.svelte";
   import Contact from "$lib/sections/Contact.svelte";
 
-  import SectionContainer from "../lib/components/SectionContainer.svelte";
-  import Navbar from "../lib/components/Navbar.svelte";
+  import SectionContainer from "$lib/components/SectionContainer.svelte";
+  import Navbar from "$lib/components/Navbar.svelte";
 </script>
 
 <Hero />

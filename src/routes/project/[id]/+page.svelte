@@ -1,6 +1,8 @@
 <script>
   import { onMount } from "svelte";
   import { page } from "$app/stores";
+  import SectionContainer from "$lib/components/SectionContainer.svelte";
+  import Navbar from "$lib/components/Navbar.svelte";
 
   let project = null;
 
@@ -16,9 +18,8 @@
 </script>
 
 {#if project}
-  <section class="container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold mb-6 text-white">{project.title}</h1>
-
+  <Navbar />
+  <SectionContainer id={project.title}>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
       <div>
         <img
@@ -72,7 +73,7 @@
         <p class="text-gray-300 mb-2">{detail}</p>
       {/each}
     </div>
-  </section>
+  </SectionContainer>
 {:else}
   <div class="container mx-auto px-4 py-12">
     <p class="text-gray-300">Project not found.</p>
