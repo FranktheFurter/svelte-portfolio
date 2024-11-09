@@ -14,6 +14,42 @@
       {project.type} • {project.category} • {project.year}
     </p>
 
+    <!-- Links -->
+    {#if project.links && project.links.length > 0}
+      <div class="mb-8">
+        {#each project.links as link}
+          <a
+            href={link.url}
+            class="inline-flex items-center gap-2 px-4 py-2 mr-4
+                   text-theme-400 bg-theme-900/30
+                   border border-theme-700/50 rounded-lg
+                   hover:bg-theme-800/50 hover:text-theme-300
+                   transition-all duration-200"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {#if link.icon}<i class={link.icon}></i>{/if}
+            <span>{link.description}</span>
+          </a>
+        {/each}
+      </div>
+    {/if}
+
+    <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+      {project.details}
+    </p>
+
+    <!-- Technologies -->
+    <div class="flex flex-wrap gap-2 mb-8">
+      {#each project.technologies as tech}
+        <span
+          class="bg-theme-900/50 text-theme-300 px-4 py-2 rounded-full text-sm"
+        >
+          {tech}
+        </span>
+      {/each}
+    </div>
+
     <!-- Image Gallery -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
       {#each project.images || [project.previewImage] as image}
@@ -68,41 +104,9 @@
       </div>
     {/if}
 
-    <p class="text-gray-300 text-lg mb-8 leading-relaxed">
-      {project.details}
-    </p>
-
-    <!-- Technologies -->
-    <div class="flex flex-wrap gap-2 mb-8">
-      {#each project.technologies as tech}
-        <span
-          class="bg-theme-900/50 text-theme-300 px-4 py-2 rounded-full text-sm"
-        >
-          {tech}
-        </span>
-      {/each}
-    </div>
-
-    <!-- Links -->
-    {#if project.links && project.links.length > 0}
-      <div class="mb-8">
-        {#each project.links as link}
-          <a
-            href={link.url}
-            class="inline-flex items-center gap-2 text-theme-400 hover:text-theme-300 mr-4 transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {#if link.icon}<i class={link.icon}></i>{/if}
-            <span>{link.description}</span>
-          </a>
-        {/each}
-      </div>
-    {/if}
-
     <!-- Objective & Project Details -->
     <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-gray-800/50 rounded-xl p-6">
+      <div class="-xl p-6">
         <h2 class="text-2xl font-semibold mb-4 text-white">
           Objective Details
         </h2>
@@ -116,7 +120,7 @@
         </ul>
       </div>
 
-      <div class="bg-gray-800/50 rounded-xl p-6">
+      <div class=" p-6">
         <h2 class="text-2xl font-semibold mb-4 text-white">Project Details</h2>
         <ul class="space-y-2 text-gray-300">
           {#each project.projectDetails as detail}
