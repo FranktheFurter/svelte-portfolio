@@ -12,7 +12,6 @@
 </script>
 
 <Hero />
-<Navbar />
 
 <SectionContainer id="about">
   <About {timeline} />

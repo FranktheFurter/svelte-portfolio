@@ -2,11 +2,8 @@
   export let data;
   const { project } = data;
 
-  import Navbar from "$lib/components/Navbar.svelte";
   import SectionContainer from "$lib/components/SectionContainer.svelte";
 </script>
-
-<Navbar />
 
 {#if project}
   <SectionContainer id={project.title}>
