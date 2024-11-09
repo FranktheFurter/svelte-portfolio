@@ -1,4 +1,4 @@
-<nav class="sticky top-0 bg-gray-900/80 backdrop-blur-xl z-50">
+<nav class="sticky top-0 bg-gray-900/90 backdrop-blur-xl z-50">
   <div class="container mx-auto px-4">
     <div class="flex items-center justify-start space-x-8 py-4">
       <a href="/" class="flex items-center">
