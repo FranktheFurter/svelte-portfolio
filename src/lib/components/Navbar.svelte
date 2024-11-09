@@ -6,7 +6,7 @@
           class="w-8 h-8 overflow-hidden bg-gray-900 flex items-center justify-center"
         >
           <img
-            src="/logo/fr-logo.png"
+            src="/logo/fr-logo-sm.png"
             alt="Logo"
             class="w-full h-full object-contain"
           />
