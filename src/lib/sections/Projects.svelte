@@ -29,7 +29,7 @@
               <p class="text-gray-400 mb-4">{project.description}</p>
               <div class="flex flex-wrap gap-2">
                 <span
-                  class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full text-sm"
+                  class="bg-theme-900/50 text-theme-300 px-3 py-1 rounded-full text-sm"
                   >{project.type}</span
                 >
                 <span

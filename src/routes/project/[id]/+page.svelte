@@ -20,6 +20,9 @@
         <div
           class="rounded-xl overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-[1.02] cursor-pointer"
           on:click={() => (selectedImage = image)}
+          on:keydown={(e) => e.key === "Enter" && (selectedImage = image)}
+          role="button"
+          tabindex="0"
         >
           <img
             src={image}
@@ -73,7 +76,7 @@
     <div class="flex flex-wrap gap-2 mb-8">
       {#each project.technologies as tech}
         <span
-          class="bg-blue-900/50 text-blue-300 px-4 py-2 rounded-full text-sm"
+          class="bg-theme-900/50 text-theme-300 px-4 py-2 rounded-full text-sm"
         >
           {tech}
         </span>
@@ -86,7 +89,7 @@
         {#each project.links as link}
           <a
             href={link.url}
-            class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mr-4 transition-colors"
+            class="inline-flex items-center gap-2 text-theme-400 hover:text-theme-300 mr-4 transition-colors"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -106,7 +109,7 @@
         <ul class="space-y-2 text-gray-300">
           {#each project.objectiveDetails as objective}
             <li class="flex items-start gap-2">
-              <span class="text-blue-400">•</span>
+              <span class="text-theme-400">•</span>
               <span>{objective}</span>
             </li>
           {/each}
@@ -118,7 +121,7 @@
         <ul class="space-y-2 text-gray-300">
           {#each project.projectDetails as detail}
             <li class="flex items-start gap-2">
-              <span class="text-blue-400">•</span>
+              <span class="text-theme-400">•</span>
               <span>{detail}</span>
             </li>
           {/each}
