@@ -5,9 +5,11 @@
   import Contact from "$lib/sections/Contact.svelte";
 
   import SectionContainer from "../lib/components/SectionContainer.svelte";
+  import Navbar from "../lib/components/Navbar.svelte";
 </script>
 
 <Hero />
+<Navbar />
 
 <SectionContainer id="about">
   <About />
