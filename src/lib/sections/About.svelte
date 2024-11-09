@@ -6,7 +6,7 @@
   <div class="flex-1 relative">
     <div class="clearfix">
       <div
-        class="float-left mr-6 mb-4 relative w-48 h-48 rounded-full overflow-hidden border-4 border-gray-700 bg-gray-900"
+        class="float-left mr-6 mb-4 relative w-48 h-48 rounded-full overflow-hidden border-2 border-theme-500/50 bg-gray-900"
       >
         <img
           src="/images/me.png"
@@ -45,12 +45,12 @@
   </div>
   <div class="flex-1">
     {#each timeline as item}
-      <div class="relative pl-6 border-l-2 border-theme-500 mb-8">
+      <div class="relative pl-6 border-l-2 border-theme-500/50 mb-8">
         <div class="mb-1">
           <span class="font-semibold text-white">{item.company}</span>
           <span class="text-sm text-gray-400 ml-2">{item.date}</span>
         </div>
-        <div class="text-theme-300 mb-1">{item.role}</div>
+        <div class="text-theme-500/70 mb-1">{item.role}</div>
         <p class="text-gray-400 text-sm">{item.description}</p>
       </div>
     {/each}
