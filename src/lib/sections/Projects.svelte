@@ -32,10 +32,10 @@
                   class="bg-theme-900/50 text-theme-300 px-3 py-1 rounded-full text-sm"
                   >{project.type}</span
                 >
-                <span
+                <!-- <span
                   class="bg-gray-700/50 text-gray-300 px-3 py-1 rounded-full text-sm"
                   >{project.year}</span
-                >
+                > -->
               </div>
             </div>
           </a>
