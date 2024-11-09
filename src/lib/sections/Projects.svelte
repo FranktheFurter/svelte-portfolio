@@ -1,17 +1,5 @@
 <script>
-  import { onMount } from "svelte";
-  let projects = [];
-
-  onMount(async () => {
-    try {
-      const response = await fetch("/data/projects.json");
-      projects = await response.json();
-    } catch (error) {
-      console.error("Error loading projects:", error);
-      projects = [];
-    }
-  });
-
+  export let projects = [];
   $: years = [...new Set(projects.map((p) => p.year))].sort().reverse();
 </script>
 

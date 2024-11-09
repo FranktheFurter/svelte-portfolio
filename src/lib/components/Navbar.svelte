@@ -12,15 +12,19 @@
           />
         </div>
       </a>
-      <a href="/#about" class="text-gray-300 hover:text-white transition-colors"
-        >About</a
+      <a
+        href="/#about"
+        data-sveltekit-reload
+        class="text-gray-300 hover:text-white transition-colors">About</a
       >
       <a
         href="/#projects"
+        data-sveltekit-reload
         class="text-gray-300 hover:text-white transition-colors">Projects</a
       >
       <a
         href="/#contact"
+        data-sveltekit-reload
         class="text-gray-300 hover:text-white transition-colors">Contact</a
       >
     </div>

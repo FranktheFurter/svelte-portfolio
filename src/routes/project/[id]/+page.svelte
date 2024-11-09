@@ -1,24 +1,14 @@
 <script>
-  import { onMount } from "svelte";
-  import { page } from "$app/stores";
-  import SectionContainer from "$lib/components/SectionContainer.svelte";
+  export let data;
+  const { project } = data;
+
   import Navbar from "$lib/components/Navbar.svelte";
-
-  let project = null;
-
-  onMount(async () => {
-    try {
-      const response = await fetch("/data/projects.json");
-      const projects = await response.json();
-      project = projects.find((p) => p.id === $page.params.id);
-    } catch (error) {
-      console.error("Error loading project:", error);
-    }
-  });
+  import SectionContainer from "$lib/components/SectionContainer.svelte";
 </script>
 
+<Navbar />
+
 {#if project}
-  <Navbar />
   <SectionContainer id={project.title}>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
       <div>

@@ -1,16 +1,5 @@
 <script>
-  import { onMount } from "svelte";
-  let timeline = [];
-
-  onMount(async () => {
-    try {
-      const response = await fetch("/data/timeline.json");
-      timeline = await response.json();
-    } catch (error) {
-      console.error("Error loading timeline:", error);
-      timeline = [];
-    }
-  });
+  export let timeline = [];
 </script>
 
 <div class="flex flex-col md:flex-row gap-8">
