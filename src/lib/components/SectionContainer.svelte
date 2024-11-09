@@ -3,6 +3,6 @@
 </script>
 
 <section {id} class="container mx-auto scroll-mt-16">
-  <h1 class="text-4xl first-letter:uppercase">{id}</h1>
+  <h1 class="text-4xl first-letter:uppercase mb-12">{id}</h1>
   <slot></slot>
 </section>
