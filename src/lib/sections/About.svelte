@@ -25,7 +25,7 @@
         role due to my love for development. I thrive on the intricate process of
         combining individual elements in both programming and designing.
       </p>
-      <div class="mt-6">
+      <!-- <div class="mt-6">
         <a
           href="/cv/marc_frankfurter_cv_de.pdf"
           download
@@ -40,7 +40,7 @@
         >
           🇬🇧 Download CV (English)
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
   <div class="flex-1">
