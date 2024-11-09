@@ -25,7 +25,7 @@
           <div
             class="group bg-gray-800/30 rounded-xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl"
           >
-            <a href={`projects.html?id=${project.id}`} class="block">
+            <a href={`/project/${project.id}`} class="block">
               <div class="relative">
                 <img
                   src={project.previewImage}
