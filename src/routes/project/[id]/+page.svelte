@@ -3,8 +3,10 @@
   const { project } = data;
 
   import SectionContainer from "$lib/components/SectionContainer.svelte";
+  import Navbar from "$lib/components/Navbar.svelte";
 </script>
 
+<Navbar />
 {#if project}
   <SectionContainer id={project.title}>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
